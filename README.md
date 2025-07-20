@@ -25,7 +25,7 @@ All files are in Python `pickle` format (`.pkl`), readable using `pandas`:
 ```python
 import pandas as pd
 df = pd.read_pickle('factors_contextual_vif_data_2019.pkl')
-
+```
 
 ## 🧪 Applications
 
