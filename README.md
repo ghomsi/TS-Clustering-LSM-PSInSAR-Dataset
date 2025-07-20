@@ -10,12 +10,12 @@ This repository contains the dataset used for the article:
 The dataset includes four `.pkl` files used in the TS-Clustering and contextual analysis process:
 
 ### Contextual Factors – VIF Analysis
-- `factors_vif_data_2024.pkl`: Raw contextual variables with multicollinearity analysis (VIF)
-- `factors_vif_norm_data_2024.pkl`: Normalized version of the same dataset
+- `factors_contextual_vif_data_2019.pkl`: Raw contextual variables with multicollinearity analysis (VIF)
+- `factors_contextual_vif_normalized_data_2019.pkl`: Normalized version of the same dataset
 
 ### Ground Dynamics – PS-InSAR Trajectories
-- `factors_ground_data_2024.pkl`: Raw ground deformation factors extracted from PS-InSAR
-- `factors_ground_data_norm_2024.pkl`: Normalized PS-InSAR time-series features
+- `factors_ground_deformation_data_2019.pkl`: Raw ground deformation factors extracted from PS-InSAR
+- `factors_ground_deformation_data_2019_normalized.pkl`: Normalized PS-InSAR time-series features
 
 These datasets were used to perform semi-supervised clustering, multicollinearity testing, and ground dynamics trajectory analysis for landslide susceptibility mapping.
 
@@ -25,4 +25,4 @@ All files are in Python `pickle` format (`.pkl`), readable using `pandas`:
 
 ```python
 import pandas as pd
-df = pd.read_pickle('factors_vif_data_2024.pkl')
+df = pd.read_pickle('factors_contextual_vif_data_2019.pkl')
